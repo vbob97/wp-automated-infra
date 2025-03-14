@@ -1,0 +1,19 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate
+*.tfstate*
+*.backup
+
+# Docker / LocalStack files
+localstack/
+docker-compose.override.yml
+docker-compose.override.yml
+docker-compose*.log
+docker-compose.override.yml
+
+# file MacOS
+.DS_Store
+
+# logs
+*.log

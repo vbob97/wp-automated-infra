@@ -1,0 +1,13 @@
+version: '3'
+services:
+  localstack:
+    image: localstack/localstack:1.0.4
+    ports:
+      - "4566:4566"
+    environment:
+      - SERVICES=s3
+      - HOSTNAME=localstack
+      - HOSTNAME_EXTERNAL=localstack
+      - DEFAULT_REGION=us-east-2
+    volumes:
+      - "./localstack:/temp/localstack:rw"
